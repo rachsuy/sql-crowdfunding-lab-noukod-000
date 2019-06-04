@@ -22,7 +22,7 @@ end
 # "SELECT projects.title, SUM(pledges.amount)-projects.funding_goal
 #     FROM projects INNER JOIN pledges ON projects.id = pledges.project_id
 #     GROUP BY projects.title HAVING SUM(pledges.amount)>= projects.funding_goal;"
-# 
+#
 #   #  "select projects.title,SUM(pledges.amount)-funding_goal from projects inner join pledges on projects.id = pledges.project_id
 # #group by projects.title HAVING SUM(pledges.amount)>=projects.funding_goal"
 # end
