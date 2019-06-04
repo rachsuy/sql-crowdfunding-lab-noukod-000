@@ -24,8 +24,8 @@ end
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
 "Write your SQL query Here"
 "SELECT users.name, SUM(amount) FROM users
- INNER JOIN pledges ON users.id = pledges.user_id
- GROUP BY users.name ORDER BY users.name and Sum(amount);"
+ JOIN pledges ON users.id = pledges.user_id
+ GROUP BY users.name ORDER BY Sum(amount);"
 
 end
 
